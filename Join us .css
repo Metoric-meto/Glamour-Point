@@ -1,0 +1,196 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f0ff; /* Soft lavender background */
+    color: #4b4b4b; /* Neutral gray for text */
+}
+
+/* Header Section */
+.header {
+    background-color: transparent; /* Fully transparent background */
+    color: #f3f0ff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem;
+}
+
+.join-us {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.join-us h2 {
+    text-align: center;
+    color: #a72fcb; /* Primary purple color */
+}
+
+.join-us p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #a72fcb;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #d3b4e6; /* Light purple border */
+    border-radius: 4px;
+    color: #4b4b4b;
+    background-color: #f9f5ff; /* Soft background */
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #a72fcb;
+}
+
+form button {
+    padding: 0.8rem;
+    background: #a72fcb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background: #e91e63;
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #4b4b4b; /* Dark gray footer */
+    color: #fff;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Form Enhancements for Better UX */
+form textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f0ff; /* Adjust the background color if needed */
+}
+
+header .logo {
+    width: 120px; /* Adjust width as per your logo size */
+    height: auto;
+    margin-right: 20px;
+}
+
+header .header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #000000;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Styling the form */
+main .join-us {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main .join-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main .join-us input, main .join-us textarea, main .join-us button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+main .join-us button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+main .join-us button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

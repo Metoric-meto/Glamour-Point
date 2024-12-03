@@ -1,0 +1,28 @@
+Server.js File:
+
+Issue: The MongoDB connection string contains the database name as "databasename." You may want to replace it with your actual database name.
+Solution: Replace "databasename" in the MongoDB connection string with your real database name.
+Contactus.js File:
+
+Issue: The form ID used in document.getElementById('customerSupportForm') is not present in the HTML files.
+Solution: Ensure that the form in your HTML file has the ID "customerSupportForm" or update the ID in the JavaScript file accordingly.
+Package.json File:
+
+Issue: The "main" property in package.json is set to "server.js", but it seems your main file is named "app.js".
+Solution: Either change the "main" property to "app.js" or rename your main server file to "server.js".
+File Structure:
+
+Issue: The image paths in your CSS files (contactus.css and style.css) are relative. Ensure that the image files are in the correct locations relative to these CSS files.
+Solution: Confirm that the image paths in CSS files are correct, and images are in the expected locations.
+MongoDB Dependency Versions:
+
+Issue: The MongoDB driver (mongodb) version in your dependencies (package.json) is set to "3.6". Consider using a more recent version for compatibility and security reasons.
+Solution: Update the MongoDB driver version in your package.json to the latest stable version. You can find the latest version on the MongoDB Node.js driver GitHub page.
+CSS Files:
+
+Issue: In contactus.css, the background image path is set to 'images/contactusimg.jpg'. Make sure the image is in the correct location relative to this CSS file.
+Solution: Confirm that the image path is correct, and the image is in the expected location.
+Smooth Scroll Library:
+
+Issue: The smooth-scroll.polyfills.min.js library is included, but its usage is not clear from the provided files. Ensure that it is used appropriately in your HTML or JavaScript files.
+Solution: If not used, you may consider removing it. If used, make sure it's correctly integrated into your project

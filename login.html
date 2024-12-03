@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Point - Login & Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="images/logo.png" alt="Glamour Point Logo" class="logo">
+            <div class="header-content">
+                <h1>Glamour Point</h1>
+                <p>"Your Grooming, Simplified!"</p>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <section class="form-container">
+            <!-- Login Form -->
+            <form id="loginForm" class="form active">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+            </form>
+
+            <!-- Sign-Up Form -->
+            <form id="signupForm" class="form hidden">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" name="signupName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="signupEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="signupPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPhone">Phone Number</label>
+                    <input type="tel" id="signupPhone" name="signupPhone" placeholder="Enter your phone number" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="form-footer">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Glamour Point. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

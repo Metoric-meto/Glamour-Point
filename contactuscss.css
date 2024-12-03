@@ -1,0 +1,78 @@
+body {
+    background-image: url('images/contactusimg.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centralize container using flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Transparent box styles with a darker overlay */
+.transparent-box {
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent background */
+    color: #fff;  /* White text */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);  /* Fainter shadow */
+    margin: 20px; /* Add margin between sections */
+    width: 100%; /* Make box take full width on small screens */
+    max-width: 500px; /* Limit max width for large screens */
+}
+
+/* Heading styles */
+.contact-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #FFD700;  /* Gold color for contrast */
+}
+
+/* Info text styles */
+.contact-info {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ddd;  /* Light gray color */
+}
+
+/* Form input and textarea styles */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.7);  /* Slightly transparent white background */
+    border: 1px solid #ddd;
+    color: #727070;
+}
+
+textarea.form-control {
+    background-color: rgba(255, 255, 255, 0.7);  /* Slightly transparent white */
+    resize: vertical;
+}
+
+/* Button style */
+.btn-primary {
+    background-color: #1e7e34;  /* Dark green */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #155d27;  /* Darker green on hover */
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 767px) {
+    .container {
+        margin-top: 20px;
+        flex-direction: column;  /* Stack sections vertically */
+    }
+    .transparent-box {
+        padding: 20px;
+        width: 90%;  /* Make sections take up most of the screen width */
+        max-width: none;  /* Remove max width for smaller screens */
+    }
+}
